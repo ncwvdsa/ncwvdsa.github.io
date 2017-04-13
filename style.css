@@ -1,10 +1,31 @@
-body {
-  padding-top: 2em;
+html {
   height: 100%;
 }
 
-p, span, a, div {
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 6em;
+  box-sizing: border-box;
+  font-family: Serif;
+}
+
+p, span, a, div, time {
   font-size: 16px;
+}
+
+p {
+  margin-bottom: .5em;
+}
+
+time {
+  font-weight: bold;
+  margin-bottom: .5em;
+  display: inline-block;
+}
+
+small {
+  font-size: 12px;
 }
 
 a {
@@ -22,15 +43,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
 
 h3 {
   font-size: 2em;
 }
 
+h4 {
+  font-size: 1.5em;
+}
+
 header {
-  margin: 2em;
+  margin: 2em 4em;
 }
 
 header > p {
@@ -47,11 +72,21 @@ header > p {
 
 .container > section {
   flex: 1 1 auto;
-  width: 30px;
+  min-width: 100px;
+  max-width: 100%;
   height: 100%;
   transition: width 0.5s ease-out;
   padding: 1em 2em;
   text-align: center;
+}
+
+figure {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+section li {
+  margin-bottom: .5em;
 }
 
 footer {
@@ -59,7 +94,7 @@ footer {
   bottom: 0px;
   width: 100%;
   text-align: center;
-  padding-bottom: .5em;
+  padding-top: 1em;
   height: 4em;
   background-color: black;
   color: white;
@@ -75,7 +110,74 @@ footer li {
   margin-right: 2em;
 }
 
-@media (max-width: 640px) {
+li i {
+  margin-right: .2em;
+}
+
+i.rose::before {
+  font-size: 14px;
+  display: inline;
+  content: '\1F339';
+}
+
+.author {
+  font-style: italic;
+}
+
+.separator {
+	border: 2px solid red;
+  display: block;
+}
+
+.separator.horizontal {
+  border-radius: 100em / 1em;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 1em;
+}
+
+.separator.horizontal.small {
+  border-radius: 50em / .5em;
+  border: 1px solid red;
+}
+
+.separator.vertical {
+	border-radius: 1em / 100em;
+  height: 100%;
+}
+
+#events {
+  background-color: lightgray;
+  border: 1px solid red;
+  border-radius: .5em;
+}
+
+.img-container {
+  width: 100%;
+}
+
+#logo {
+  display: block;
+  max-width: 20em;
+  max-height: 16em;
+  min-width: 8em;
+  min-height: 6em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+
+  img#logo {
+    max-width: 100%;
+  }
+
+  footer li {
+    margin-right: 0;
+  }
+
   #events {
     order: 1;
   }
