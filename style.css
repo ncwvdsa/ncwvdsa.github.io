@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Manifold DSA Regular";
+  src: url("/fonts/Webfont/ManifoldDSA-Regular.woff2") format("woff2"),
+       url("/fonts/Webfont/ManifoldDSA-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Manifold DSA Bold";
+  src: url("/fonts/Webfont/ManifoldDSA-Bold.woff2") format("woff2"),
+       url("/fonts/Webfont/ManifoldDSA-Bold.woff") format("woff");
+}
+
 html {
   height: 100%;
 }
@@ -7,7 +19,8 @@ body {
   min-height: 100%;
   padding-bottom: 6em;
   box-sizing: border-box;
-  font-family: Serif;
+  font-family: "Manifold DSA Regular", Sans-Serif;
+  color: #231F20;
 }
 
 p, span, a, div, time {
@@ -29,11 +42,12 @@ small {
 }
 
 a {
-  color: red;
+  color: #EC1F27;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Manifold DSA Bold", Sans-Serif;
   text-align: center;
   margin-bottom: .5em;
 }
@@ -71,7 +85,7 @@ header > p {
 }
 
 .container > section {
-  flex: 1 1 auto;
+  flex: 1 1 0;
   min-width: 100px;
   max-width: 100%;
   height: 100%;
@@ -96,7 +110,7 @@ footer {
   text-align: center;
   padding-top: 1em;
   height: 4em;
-  background-color: black;
+  background-color: #231F20;
   color: white;
 }
 
@@ -125,7 +139,7 @@ i.rose::before {
 }
 
 .separator {
-	border: 2px solid red;
+	border: 2px solid #EC1F27;
   display: block;
 }
 
@@ -138,7 +152,7 @@ i.rose::before {
 
 .separator.horizontal.small {
   border-radius: 50em / .5em;
-  border: 1px solid red;
+  border: 1px solid #EC1F27;
 }
 
 .separator.vertical {
@@ -148,7 +162,7 @@ i.rose::before {
 
 #events {
   background-color: lightgray;
-  border: 1px solid red;
+  border: 1px solid #EC1F27;
   border-radius: .5em;
 }
 
