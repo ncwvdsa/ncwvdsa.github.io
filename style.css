@@ -201,4 +201,8 @@ i.rose::before {
   #join {
     order: 3;
   }
+
+  header > p {
+    margin: 0 -10%;
+  }
 }
