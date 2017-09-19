@@ -23,6 +23,12 @@ body {
   color: #231F20;
 }
 
+input, button, textarea, select {
+  font-family: "Manifold DSA Regular", Sans-Serif;
+  color: #231F20;
+}
+  
+
 p, span, a, div, time {
   font-size: 16px;
 }
@@ -92,6 +98,13 @@ header > p {
   transition: width 0.5s ease-out;
   padding: 1em 2em;
   text-align: center;
+}
+
+article {
+  height: 100%;
+  transition: width 0.5s ease-out;
+  padding: 0 20%;
+  text-align: justify;
 }
 
 figure {
@@ -204,5 +217,9 @@ i.rose::before {
 
   header > p {
     margin: 0 -10%;
+  }
+
+  article {
+    padding: 2em;
   }
 }
