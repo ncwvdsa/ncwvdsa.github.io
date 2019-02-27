@@ -134,7 +134,8 @@ footer ul {
 footer li {
   display: inline;
   list-style-type: none;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 li i {
